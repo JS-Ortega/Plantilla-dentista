@@ -1,0 +1,100 @@
+.section {
+  padding: 5rem 5%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.leftCol {
+  flex: 1;
+}
+
+.rightCol {
+  flex: 1.2;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2.5rem;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.iconContainer {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.infoTitle {
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.infoText {
+  color: var(--text-gray);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.paymentMethods {
+  margin-top: 2rem;
+}
+
+.paymentTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-gray);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.iconsRow {
+  display: flex;
+  gap: 1rem;
+  color: var(--text-light);
+}
+
+.mapImage {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

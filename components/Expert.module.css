@@ -1,0 +1,139 @@
+.section {
+  padding: 6rem 5%;
+  background-color: var(--bg-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+  max-width: 500px;
+}
+
+.image {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+}
+
+.floatingBadge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  max-width: 200px;
+}
+
+.badgeNum {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+
+.badgeText {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  line-height: 1.4;
+}
+
+.content {
+  flex: 1;
+}
+
+.tag {
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.name {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.badgesContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.smallBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.statsContainer {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.statNum {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  .badgesContainer, .statsContainer {
+    justify-content: center;
+  }
+  .floatingBadge {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: -30px;
+    text-align: center;
+  }
+  .name {
+    font-size: 2rem;
+  }
+}

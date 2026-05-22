@@ -1,0 +1,158 @@
+.section {
+  padding: 5rem 5%;
+  background-color: var(--bg-gray);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.leftCol {
+  flex: 1;
+}
+
+.rightCol {
+  flex: 1;
+  margin-top: 3.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroupRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.formGroupFlex {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-gray);
+}
+
+.input {
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  outline: none;
+  font-size: 0.95rem;
+  font-family: inherit;
+  width: 100%;
+}
+
+.textarea {
+  height: 120px;
+  resize: none;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-gray);
+  pointer-events: none;
+}
+
+.timeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.timeBtn {
+  padding: 0.8rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background-color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+}
+
+.timeBtnActive {
+  border-color: var(--primary);
+  background-color: rgba(18,62,97,0.05);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.checkboxGroup {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox {
+  margin-top: 3px;
+}
+
+.checkboxText {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  line-height: 1.4;
+}
+
+.submitBtn {
+  background-color: var(--primary);
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .rightCol {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .formGroupRow {
+    flex-direction: column;
+    gap: 0;
+  }
+}

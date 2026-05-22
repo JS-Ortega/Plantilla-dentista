@@ -1,0 +1,143 @@
+.footer {
+  background-color: var(--bg-gray);
+  padding: 4rem 5% 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logoCol {
+  flex: 2;
+  min-width: 300px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.desc {
+  color: var(--text-gray);
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-gray);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.title {
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.link {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+.urgencyCard {
+  background-color: #ffe4e6;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  margin-top: 1rem;
+}
+
+.urgencyTitle {
+  color: #e11d48;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.urgencyText {
+  color: #881337;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .logoCol {
+    min-width: 100%;
+  }
+  .desc {
+    max-width: 100%;
+  }
+  .bottomBar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
