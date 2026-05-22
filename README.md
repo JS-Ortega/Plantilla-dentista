@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Plantilla Dentista
 
-## Getting Started
+Una plantilla moderna y profesional para clínicas dentales, construida con las últimas tecnologías web.
 
-First, run the development server:
+## 🚀 Tecnologías Utilizadas
+
+Este proyecto está desarrollado utilizando un stack moderno para ofrecer el mejor rendimiento y experiencia de usuario:
+
+- **[Next.js](https://nextjs.org/)** (v16.2) - Framework de React para desarrollo web rápido y optimizado.
+- **[React](https://react.dev/)** (v19) - Biblioteca de JavaScript para construir interfaces de usuario interactivas.
+- **[TypeScript](https://www.typescriptlang.org/)** - Añade tipado estático a JavaScript, mejorando la robustez del código.
+- **[Tailwind CSS](https://tailwindcss.com/)** (v4) - Framework de CSS de utilidad (Utility-first) para un diseño rápido y flexible.
+- **[Framer Motion](https://www.framer.com/motion/)** - Biblioteca potente para crear animaciones fluidas en React.
+- **[Lucide React](https://lucide.dev/)** - Biblioteca de iconos modernos y consistentes.
+
+## 🛠️ Cómo levantar el proyecto localmente
+
+Sigue estos pasos para descargar y ejecutar el proyecto en tu entorno local:
+
+### 1. Clonar el repositorio
+
+Abre tu terminal y ejecuta el siguiente comando para clonar el proyecto, luego entra en la carpeta creada:
+
+```bash
+git clone <url-del-repositorio>
+cd plantilla-dentista
+```
+
+*(Nota: Reemplaza `<url-del-repositorio>` con la URL real de tu repositorio Git).*
+
+### 2. Instalar las dependencias
+
+Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema. Luego, instala las dependencias del proyecto:
+
+```bash
+npm install
+```
+
+### 3. Iniciar el servidor de desarrollo
+
+Para levantar el proyecto en modo de desarrollo, ejecuta:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Visualizar en el navegador
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Abre tu navegador web favorito y navega a [http://localhost:3000](http://localhost:3000). Podrás ver la aplicación corriendo. El proyecto cuenta con "Hot Reload", por lo que se recargará automáticamente a medida que guardes cambios en el código.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estructura del Proyecto
 
-## Learn More
+A continuación se describen los directorios más importantes para entender el código:
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` - Contiene las rutas de Next.js (App Router), páginas principales y layouts.
+- `components/` - Archivos de componentes de React reutilizables (botones, tarjetas, secciones, etc.).
+- `constants/` - Contiene valores estáticos, textos y configuraciones (`strings.ts`, etc.) para mantener el código limpio.
+- `public/` - Archivos estáticos accesibles públicamente como imágenes, logos o iconos.
+- `views/` - Componentes más grandes o secciones completas que conforman las vistas de la página.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📜 Scripts disponibles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+En el directorio del proyecto, puedes ejecutar los siguientes comandos mediante npm:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev`: Inicia el servidor de desarrollo local.
+- `npm run build`: Construye la aplicación optimizada y lista para producción.
+- `npm start`: Inicia el servidor de producción (es necesario haber ejecutado `npm run build` previamente).
+- `npm run lint`: Ejecuta ESLint para analizar el código y asegurar las buenas prácticas.
